@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: all .3 ease-out;
+}
+
+body{ /* Trocar de cor do background */
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at bottom, #fff, transparent 80%),
+    linear-gradient(to top, dodgerblue 0%, transparent 70%),
+    linear-gradient(to bottom, transparent, rgb(#fff 0.4) 70%),
+    #1e90ff;
+    animation: bg 20s infinite;
+    overflow: hidden;
+}
+
+@keyframes bg {
+    0%, 100% {background-color: #59acff;}
+    25% {background-color: #97ffd4;}
+    50% {background-color: #ad8fff;}
+    75% {background-color: #ffa1d5;}
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container before {
+    font-family: 'Font Awesome 5 Free';
+    content: "/f7e4";
+    font-weight: 900;
+    font-size: 50vh;
+    opacity: 0;
+    top: 30vh;
+    left: 60vw;
+    width: 30vw;
+}
+
+.card {
+    display: flex;
+    justify-content: end;
+    width: 600px;
+    color: #fff;
+    text-align: right;
+    padding: 30px;
+    border-radius: 10px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.56);
+    background: rgba(255, 255, 255, 0.30);
+    backdrop-filter: blur(7.3px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blue(7.3px);
+    z-index: 1;
+}
+
+.card-body {
+    width: 70%;
+}
+
+p, h2 {
+    text-align: left;
+    color: #2d3436;
+}
+
+#tec {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+h5 {
+    opacity: .8;
+    color: #2d3436; /*Mudar cor do nome*/
+    font-size: 45px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-style: italic;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+
+h6 {
+    opacity: .8;
+    color: #2d3436; /*Mudar cor do nome*/
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-style: italic;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+
+.socialbar {
+    border-radius: 3em;
+    width: 90%;
+    padding: 17px;
+    margin-top: 19px;
+    color: white;
+}
+
+.card a {
+    transition: 0.4s;
+    color: #2d3436; /*mudar a cor dos ícones*/
+}
+
+svg { /*Mudar o tamanho dos icons*/
+    width: 50px;
+    height: 50px;
+}
+
+#rede1:hover {
+    color: #6c5ce7;
+}
+
+#rede2:hover {
+    color: #0984e3;
+}
+
+#rede3:hover {
+    color: #00cec9;
+}
+
+#rede4:hover {
+    color: #00b894;
+}
+
+.card-img {
+    position: absolute;
+    width: 300px; /*mudar o tamanho da imagem*/
+    top: -10px;
+    right: 250px;
+    box-shadow: 2px 15px 15px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    border-radius: 550px;
+    left: -15%;
+}
+
+.slowfloat {
+    animation: SlowFloat 1s infinite alternate
+}
+
+@keyframes SlowFloat {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(-10px);}
+}
+
+.dialogo {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0);
+    z-index: 99999;
+    opacity: 0;
+    pointer-events: none;
+}
+
+ .dialogo:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.dialogo > div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px; 
+
+    background: radial-gradient(circle at bottom, #fff, transparent 80%),
+    linear-gradient(to top, dodgerblue 0%, transparent 70%),
+    linear-gradient(to bottom, transparent, rgb(#fff 0.4) 70%),
+    #1e90ff;
+    animation: bg 20s infinite;
+} 
+
+.close {
+    background: #606061;
+    color: #ffffff;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover {
+    background: #00d9ff;
+} 
+
+#button {
+   
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+}
+
+button {
+    margin-left: 10px;
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    padding: 6px 15px;
+    background-color: #a29bfe;
+    color: white;
+    text-align: left;
+    border-radius: 400px;
+}
+button:hover {
+    opacity: 0.3;
+}
+
+.changeColor-checked {
+    background-color: #fd79a8;
+}
